@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSkin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+  wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+  300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+           <div class="logo">GlowSkin<sup>TM</sup></div>
+           <nav class="nav">
+            <ul class="nav-links">      
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul> 
+          
+        </nav>
+         <img src="images/menu.png" class="menu-toggle">
+       
+     </div>
+    </header>
+    <section id="hero">
+    <div class="container">
+      
+      <div class="hero-img">
+        <img src="images/hero.jpg" alt="GlowSkin">
+      </div>
+      <div class="hero-text">
+        <h1>Reveal Your <br>Natural Glow</h1>
+        <p>Organic skincare for radiant and healthy skin.</p>
+      <div class="shop">
+       <input id="submit" type="submit" value="Shop Now" class="btn">
+      </div> 
+      </div>
+       
+    </div>  
+    </section>
+    <section id="about">
+        <div class="about-text">
+             <h2>Why GlowSkin?</h2>
+             <ul>
+             <li>🌿 100% Natural Ingredients</li>
+             <li>🧪 Dermatologist Approved</li>
+             <li>♻ Eco-Friendly Packaging</li>
+            </ul>
+        </div>
+       <div class="about-img">
+        <img src="images/moisturizer.jpg" alt="Skincare Product">
+       </div>
+    </section>
+    <sections id="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/serum.jpg" alt="Reguvenating Serum">
+          <h3>Reguvenating Serum</h3>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+        </div>
+          <div class="product-card">
+          <img src="images/about.jpg" alt="moisturizer">
+          <h3>Hydrating Moisturizer</h3>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </div> 
+        <div class="product-card">
+          <img src="images/cleanser.jpg" alt="Cleanser">
+          <h3>Purifying Cleanser</h3>
+          <p>$17.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </sections>
+    <footer id="#contacts">
+      <p class="glow-footer">GlowSkin<sup>TM</sup>-- Be radiant, naturally.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+        <a href="https://instagram.com" target="_blank">
+         <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://whatsapp.com" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://twitter.com">
+         <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+           console.log('Script is running');
+
+           const menuToggle = document.querySelector('.menu-toggle');
+           const navLinks = document.querySelector('.nav-links');
+
+           menuToggle.addEventListener('click', () => {
+            console.log('Menu clicked');
+           navLinks.classList.toggle('active');
+           });
+       });
+    </script>
+  </body>
+</html>
